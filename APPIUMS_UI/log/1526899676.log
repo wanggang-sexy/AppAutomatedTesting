@@ -1,0 +1,145 @@
+2018-05-21 10:48:06:043 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2018-05-21 10:48:06:045 - info: Appium REST http interface listener started on 0.0.0.0:4702
+2018-05-21 10:48:06:048 - info: [debug] Non-default server args: {"udid":"0123456789ABCDEF","port":4702,"bootstrapPort":4950,"sessionOverride":true,"noReset":true,"log":"F:/APPIUMS_UI/log/1526899676.log"}
+2018-05-21 10:48:06:049 - info: Console LogLevel: debug
+2018-05-21 10:48:06:049 - info: File LogLevel: debug
+2018-05-21 10:48:17:636 - info: --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"0123456789ABCDEF","unicodeKeyboard":"True","App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":"True","platformVersion":"4.4.2","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"}}
+2018-05-21 10:48:17:654 - info: Client User-Agent string: Python http auth
+2018-05-21 10:48:17:655 - warn: Converting cap unicodeKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-21 10:48:17:656 - warn: Converting cap resetKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-21 10:48:17:657 - info: [debug] The following desired capabilities were provided, but not recognized by appium. They will be passed on to any other services running on this server. : App
+2018-05-21 10:48:17:668 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2018-05-21 10:48:17:669 - info: [debug] Creating new appium session a9c1b8c0-eee1-4f21-b2fd-0772de408453
+2018-05-21 10:48:17:670 - info: Starting android appium
+2018-05-21 10:48:17:672 - info: [debug] Getting Java version
+2018-05-21 10:48:17:979 - info: Java version is: 1.7.0_45
+2018-05-21 10:48:17:980 - info: [debug] Checking whether adb is present
+2018-05-21 10:48:17:983 - info: [debug] Using adb from F:\Appium\Android-sdk\sdk\platform-tools\adb.exe
+2018-05-21 10:48:17:983 - warn: No app capability, can't parse package/activity
+2018-05-21 10:48:17:984 - info: [debug] Using fast reset? false
+2018-05-21 10:48:17:984 - info: [debug] Preparing device for session
+2018-05-21 10:48:17:985 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2018-05-21 10:48:17:985 - info: Retrieving device
+2018-05-21 10:48:17:986 - info: [debug] Trying to find a connected android device
+2018-05-21 10:48:17:987 - info: [debug] Getting connected devices...
+2018-05-21 10:48:17:990 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe devices
+2018-05-21 10:48:18:074 - info: [debug] 2 device(s) connected
+2018-05-21 10:48:18:075 - info: Found device 0123456789ABCDEF
+2018-05-21 10:48:18:075 - info: [debug] Setting device id to 0123456789ABCDEF
+2018-05-21 10:48:18:075 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2018-05-21 10:48:18:076 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF wait-for-device
+2018-05-21 10:48:18:261 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "echo 'ready'"
+2018-05-21 10:48:18:359 - info: [debug] Starting logcat capture
+2018-05-21 10:48:18:429 - info: [debug] Getting device API level
+2018-05-21 10:48:18:430 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "getprop ro.build.version.sdk"
+2018-05-21 10:48:18:589 - info: [debug] Device is at API Level 19
+2018-05-21 10:48:18:589 - info: Device API level is: 19
+2018-05-21 10:48:18:590 - info: [debug] Extracting strings for language: default
+2018-05-21 10:48:18:590 - info: [debug] Apk doesn't exist locally
+2018-05-21 10:48:18:590 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2018-05-21 10:48:18:591 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "rm -rf /data/local/tmp/strings.json"
+2018-05-21 10:48:18:725 - info: [debug] Not uninstalling app since server not started with --full-reset
+2018-05-21 10:48:18:725 - info: [debug] Skipping install since we launched with a package instead of an app path
+2018-05-21 10:48:18:725 - info: [debug] Forwarding system:4950 to device:4724
+2018-05-21 10:48:18:726 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF forward tcp:4950 tcp:4724
+2018-05-21 10:48:18:866 - info: [debug] Pushing appium bootstrap to device...
+2018-05-21 10:48:18:867 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF push "F:\\Appium\\AppiumForWindows\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2018-05-21 10:48:18:999 - info: [debug] Enabling Unicode keyboard support
+2018-05-21 10:48:19:000 - info: [debug] Pushing unicode ime to device...
+2018-05-21 10:48:19:001 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\unicode_ime_apk\UnicodeIME-debug.apk"
+2018-05-21 10:48:20:962 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "settings get secure default_input_method"
+2018-05-21 10:48:21:917 - info: [debug] Unsetting IME 'com.sohu.inputmethod.sogou.xiaomi/.SogouIME'
+2018-05-21 10:48:21:918 - info: [debug] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+2018-05-21 10:48:21:918 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "ime enable io.appium.android.ime/.UnicodeIME"
+2018-05-21 10:48:23:379 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "ime set io.appium.android.ime/.UnicodeIME"
+2018-05-21 10:48:24:355 - info: [debug] Pushing settings apk to device...
+2018-05-21 10:48:24:355 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2018-05-21 10:48:25:940 - info: [debug] Pushing unlock helper app to device...
+2018-05-21 10:48:25:941 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2018-05-21 10:48:27:546 - info: Starting App
+2018-05-21 10:48:27:547 - info: [debug] Attempting to kill all 'uiautomator' processes
+2018-05-21 10:48:27:548 - info: [debug] Getting all processes with 'uiautomator'
+2018-05-21 10:48:27:548 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "ps 'uiautomator'"
+2018-05-21 10:48:27:778 - info: [debug] No matching processes found
+2018-05-21 10:48:27:778 - info: [debug] Running bootstrap
+2018-05-21 10:48:27:778 - info: [debug] spawning: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.heshidai.app -e disableAndroidWatchers false
+2018-05-21 10:48:28:583 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-05-21 10:48:28:584 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-05-21 10:48:28:584 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2018-05-21 10:48:28:584 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-05-21 10:48:28:585 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-05-21 10:48:28:585 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-05-21 10:48:28:585 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-05-21 10:48:28:587 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2018-05-21 10:48:28:612 - info: [debug] [UIAUTOMATOR STDOUT] tcp port:4724
+2018-05-21 10:48:28:616 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2018-05-21 10:48:28:617 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2018-05-21 10:48:28:617 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2018-05-21 10:48:28:621 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2018-05-21 10:48:28:640 - info: [debug] Waking up device if it's not alive
+2018-05-21 10:48:28:641 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2018-05-21 10:48:28:644 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2018-05-21 10:48:28:646 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2018-05-21 10:48:28:648 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-21 10:48:28:649 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2018-05-21 10:48:28:654 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "dumpsys window"
+2018-05-21 10:48:28:682 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+2018-05-21 10:48:28:881 - info: [debug] Screen already unlocked, continuing.
+2018-05-21 10:48:28:881 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2018-05-21 10:48:28:885 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2018-05-21 10:48:28:885 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-21 10:48:28:885 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2018-05-21 10:48:28:885 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"\/data\/local\/tmp","status":0}
+2018-05-21 10:48:28:886 - info: [debug] dataDir set to: /data/local/tmp
+2018-05-21 10:48:28:886 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2018-05-21 10:48:28:889 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2018-05-21 10:48:28:891 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-21 10:48:28:891 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2018-05-21 10:48:28:892 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":false,"status":0}
+2018-05-21 10:48:28:894 - info: [debug] Getting device API level
+2018-05-21 10:48:28:895 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "getprop ro.build.version.sdk"
+2018-05-21 10:48:29:021 - info: [debug] Device is at API Level 19
+2018-05-21 10:48:29:021 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.heshidai.app/com.heshidai.app.activity.finance.WelcomeActivity"
+2018-05-21 10:48:30:272 - info: [debug] Waiting for pkg "com.heshidai.app" and activity "com.heshidai.app.activity.finance.WelcomeActivity" to be focused
+2018-05-21 10:48:30:272 - info: [debug] Getting focused package and activity
+2018-05-21 10:48:30:273 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "dumpsys window windows"
+2018-05-21 10:48:30:484 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "getprop ro.build.version.release"
+2018-05-21 10:48:30:626 - info: [debug] Device is at release version 4.4.2
+2018-05-21 10:48:30:627 - info: [debug] Device launched! Ready for commands
+2018-05-21 10:48:30:627 - info: [debug] Setting command timeout to the default of 60 secs
+2018-05-21 10:48:30:628 - info: [debug] Appium session started with sessionId a9c1b8c0-eee1-4f21-b2fd-0772de408453
+2018-05-21 10:48:30:634 - info: <-- POST /wd/hub/session 303 12997.773 ms - 74 
+2018-05-21 10:48:30:644 - info: --> GET /wd/hub/session/a9c1b8c0-eee1-4f21-b2fd-0772de408453 {}
+2018-05-21 10:48:30:645 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"4.4.2","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"0123456789ABCDEF","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"platformVersion":"4.4.2","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"deviceName":"0123456789ABCDEF","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"sessionId":"a9c1b8c0-eee1-4f21-b2fd-0772de408453"}
+2018-05-21 10:48:30:649 - info: <-- GET /wd/hub/session/a9c1b8c0-eee1-4f21-b2fd-0772de408453 200 5.310 ms - 837 {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"4.4.2","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"0123456789ABCDEF","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"platformVersion":"4.4.2","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"deviceName":"0123456789ABCDEF","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"sessionId":"a9c1b8c0-eee1-4f21-b2fd-0772de408453"}
+2018-05-21 10:49:30:646 - info: [debug] Didn't get a new command in 60 secs, shutting down...
+2018-05-21 10:49:30:646 - info: Shutting down appium session
+2018-05-21 10:49:30:647 - info: [debug] Pressing the HOME button
+2018-05-21 10:49:30:647 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "input keyevent 3"
+2018-05-21 10:49:31:645 - info: [debug] Resetting IME to 'com.sohu.inputmethod.sogou.xiaomi/.SogouIME'
+2018-05-21 10:49:31:646 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "ime set com.sohu.inputmethod.sogou.xiaomi/.SogouIME"
+2018-05-21 10:49:32:642 - info: [debug] Stopping logcat capture
+2018-05-21 10:49:32:651 - info: [debug] Logcat terminated with code null, signal SIGTERM
+2018-05-21 10:49:32:658 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+2018-05-21 10:49:32:658 - info: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+2018-05-21 10:49:32:658 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"OK, shutting down","status":0}
+2018-05-21 10:49:32:658 - info: [debug] [UIAUTOMATOR STDOUT] [CDS]close[4724]
+2018-05-21 10:49:32:658 - info: [debug] [UIAUTOMATOR STDOUT] close [socket][/0.0.0.0:4724]
+2018-05-21 10:49:32:658 - info: [debug] [BOOTSTRAP] [debug] Closed client connection
+2018-05-21 10:49:32:659 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-05-21 10:49:32:659 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.
+2018-05-21 10:49:32:659 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-05-21 10:49:32:659 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-05-21 10:49:32:660 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-05-21 10:49:32:660 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-05-21 10:49:32:660 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2018-05-21 10:49:32:660 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-05-21 10:49:32:660 - info: [debug] [UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.
+2018-05-21 10:49:32:661 - info: [debug] [UIAUTOMATOR STDOUT] Time: 64.13
+2018-05-21 10:49:32:662 - info: [debug] [UIAUTOMATOR STDOUT] OK (1 test)
+2018-05-21 10:49:32:662 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2018-05-21 10:49:32:664 - info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+2018-05-21 10:49:32:671 - info: [debug] UiAutomator shut down normally
+2018-05-21 10:49:32:671 - info: [debug] Cleaning up android objects
+2018-05-21 10:49:32:671 - info: [debug] Cleaning up appium session
+2018-05-21 10:49:32:672 - info: [debug] We shut down because no new commands came in

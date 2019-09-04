@@ -1,0 +1,81 @@
+2018-05-21 10:50:40:616 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2018-05-21 10:50:40:619 - info: Appium REST http interface listener started on 0.0.0.0:4703
+2018-05-21 10:50:40:625 - info: [debug] Non-default server args: {"udid":"127.0.0.1:21533","port":4703,"bootstrapPort":4951,"sessionOverride":true,"noReset":true,"log":"F:/APPIUMS_UI/log/1526899830.log"}
+2018-05-21 10:50:40:626 - info: Console LogLevel: debug
+2018-05-21 10:50:40:627 - info: File LogLevel: debug
+2018-05-21 10:50:45:851 - info: --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"127.0.0.1:21533","unicodeKeyboard":"True","App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":"True","platformVersion":"5.1.1","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"}}
+2018-05-21 10:50:45:853 - info: Client User-Agent string: Python http auth
+2018-05-21 10:50:45:854 - warn: Converting cap unicodeKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-21 10:50:45:854 - warn: Converting cap resetKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-21 10:50:45:856 - info: [debug] The following desired capabilities were provided, but not recognized by appium. They will be passed on to any other services running on this server. : App
+2018-05-21 10:50:45:858 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2018-05-21 10:50:45:860 - info: [debug] Creating new appium session 62e097ed-0478-47a0-aec8-b641afbf4a57
+2018-05-21 10:50:45:861 - info: Starting android appium
+2018-05-21 10:50:45:863 - info: [debug] Getting Java version
+2018-05-21 10:50:46:000 - info: Java version is: 1.7.0_45
+2018-05-21 10:50:46:002 - info: [debug] Checking whether adb is present
+2018-05-21 10:50:46:004 - info: [debug] Using adb from F:\Appium\Android-sdk\sdk\platform-tools\adb.exe
+2018-05-21 10:50:46:004 - warn: No app capability, can't parse package/activity
+2018-05-21 10:50:46:004 - info: [debug] Using fast reset? false
+2018-05-21 10:50:46:005 - info: [debug] Preparing device for session
+2018-05-21 10:50:46:005 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2018-05-21 10:50:46:006 - info: Retrieving device
+2018-05-21 10:50:46:006 - info: [debug] Trying to find a connected android device
+2018-05-21 10:50:46:007 - info: [debug] Getting connected devices...
+2018-05-21 10:50:46:009 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe devices
+2018-05-21 10:50:46:098 - info: [debug] 2 device(s) connected
+2018-05-21 10:50:46:098 - info: Found device 127.0.0.1:21533
+2018-05-21 10:50:46:099 - info: [debug] Setting device id to 127.0.0.1:21533
+2018-05-21 10:50:46:100 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2018-05-21 10:50:46:100 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 wait-for-device
+2018-05-21 10:50:46:173 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "echo 'ready'"
+2018-05-21 10:50:46:249 - info: [debug] Starting logcat capture
+2018-05-21 10:50:46:302 - info: [debug] Getting device API level
+2018-05-21 10:50:46:302 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "getprop ro.build.version.sdk"
+2018-05-21 10:50:46:402 - info: [debug] Device is at API Level 22
+2018-05-21 10:50:46:402 - info: Device API level is: 22
+2018-05-21 10:50:46:403 - info: [debug] Extracting strings for language: default
+2018-05-21 10:50:46:403 - info: [debug] Apk doesn't exist locally
+2018-05-21 10:50:46:403 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2018-05-21 10:50:46:404 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "rm -rf /data/local/tmp/strings.json"
+2018-05-21 10:50:46:523 - info: [debug] Not uninstalling app since server not started with --full-reset
+2018-05-21 10:50:46:523 - info: [debug] Skipping install since we launched with a package instead of an app path
+2018-05-21 10:50:46:524 - info: [debug] Forwarding system:4951 to device:4724
+2018-05-21 10:50:46:524 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 forward tcp:4951 tcp:4724
+2018-05-21 10:50:46:700 - info: [debug] Pushing appium bootstrap to device...
+2018-05-21 10:50:46:702 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 push "F:\\Appium\\AppiumForWindows\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2018-05-21 10:50:46:901 - info: [debug] Enabling Unicode keyboard support
+2018-05-21 10:50:46:902 - info: [debug] Pushing unicode ime to device...
+2018-05-21 10:50:46:904 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\unicode_ime_apk\UnicodeIME-debug.apk"
+2018-05-21 10:50:47:246 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "settings get secure default_input_method"
+2018-05-21 10:50:47:635 - info: [debug] Unsetting IME 'io.appium.android.ime/.UnicodeIME'
+2018-05-21 10:50:47:635 - info: [debug] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+2018-05-21 10:50:47:636 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "ime enable io.appium.android.ime/.UnicodeIME"
+2018-05-21 10:50:48:078 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "ime set io.appium.android.ime/.UnicodeIME"
+2018-05-21 10:50:48:508 - info: [debug] Pushing settings apk to device...
+2018-05-21 10:50:48:509 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2018-05-21 10:50:48:982 - info: [debug] Pushing unlock helper app to device...
+2018-05-21 10:50:48:983 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2018-05-21 10:50:49:426 - info: Starting App
+2018-05-21 10:50:49:427 - info: [debug] Attempting to kill all 'uiautomator' processes
+2018-05-21 10:50:49:428 - info: [debug] Getting all processes with 'uiautomator'
+2018-05-21 10:50:49:429 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "ps 'uiautomator'"
+2018-05-21 10:50:49:632 - info: [debug] No matching processes found
+2018-05-21 10:50:49:632 - info: [debug] Running bootstrap
+2018-05-21 10:50:49:633 - info: [debug] spawning: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.heshidai.app -e disableAndroidWatchers false
+2018-05-21 10:50:50:052 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-05-21 10:50:50:053 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-05-21 10:50:50:053 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2018-05-21 10:50:50:053 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-05-21 10:50:50:081 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-05-21 10:50:50:082 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-05-21 10:50:50:082 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-05-21 10:50:50:083 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2018-05-21 10:50:50:085 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2018-05-21 10:50:50:085 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2018-05-21 10:50:50:096 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2018-05-21 10:50:50:096 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2018-05-21 10:51:11:125 - error: Unhandled error: Error: connect ETIMEDOUT 127.0.0.1:4951
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14) context: [POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"127.0.0.1:21533","unicodeKeyboard":"True","App":"F:/heshidaiapppakage/heshidai.apk","r]

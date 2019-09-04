@@ -1,0 +1,258 @@
+2018-05-22 07:36:16:062 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2018-05-22 07:36:16:063 - info: Appium REST http interface listener started on 0.0.0.0:4700
+2018-05-22 07:36:16:067 - info: [debug] Non-default server args: {"udid":"127.0.0.1:21533","port":4700,"bootstrapPort":4900,"sessionOverride":true,"noReset":true,"log":"F:/APPIUMS_UI/log/1526974546.log"}
+2018-05-22 07:36:16:067 - info: Console LogLevel: debug
+2018-05-22 07:36:16:068 - info: File LogLevel: debug
+2018-05-22 07:36:29:456 - info: --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"127.0.0.1:21533","unicodeKeyboard":"True","App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":"True","platformVersion":"5.1.1","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"}}
+2018-05-22 07:36:29:469 - info: Client User-Agent string: Python http auth
+2018-05-22 07:36:29:471 - warn: Converting cap unicodeKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-22 07:36:29:471 - warn: Converting cap resetKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-22 07:36:29:473 - info: [debug] The following desired capabilities were provided, but not recognized by appium. They will be passed on to any other services running on this server. : App
+2018-05-22 07:36:29:475 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2018-05-22 07:36:29:476 - info: [debug] Creating new appium session 062b911c-ba30-4257-9fcc-20b4571b3304
+2018-05-22 07:36:29:477 - info: Starting android appium
+2018-05-22 07:36:29:478 - info: [debug] Getting Java version
+2018-05-22 07:36:30:058 - info: Java version is: 1.7.0_45
+2018-05-22 07:36:30:060 - info: [debug] Checking whether adb is present
+2018-05-22 07:36:30:062 - info: [debug] Using adb from F:\Appium\Android-sdk\sdk\platform-tools\adb.exe
+2018-05-22 07:36:30:062 - warn: No app capability, can't parse package/activity
+2018-05-22 07:36:30:063 - info: [debug] Using fast reset? false
+2018-05-22 07:36:30:063 - info: [debug] Preparing device for session
+2018-05-22 07:36:30:063 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2018-05-22 07:36:30:064 - info: Retrieving device
+2018-05-22 07:36:30:065 - info: [debug] Trying to find a connected android device
+2018-05-22 07:36:30:066 - info: [debug] Getting connected devices...
+2018-05-22 07:36:30:068 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe devices
+2018-05-22 07:36:30:124 - info: [debug] 1 device(s) connected
+2018-05-22 07:36:30:125 - info: Found device 127.0.0.1:21533
+2018-05-22 07:36:30:125 - info: [debug] Setting device id to 127.0.0.1:21533
+2018-05-22 07:36:30:126 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2018-05-22 07:36:30:127 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 wait-for-device
+2018-05-22 07:36:30:189 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "echo 'ready'"
+2018-05-22 07:36:30:257 - info: [debug] Starting logcat capture
+2018-05-22 07:36:30:306 - info: [debug] Getting device API level
+2018-05-22 07:36:30:306 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "getprop ro.build.version.sdk"
+2018-05-22 07:36:30:408 - info: [debug] Device is at API Level 22
+2018-05-22 07:36:30:409 - info: Device API level is: 22
+2018-05-22 07:36:30:410 - info: [debug] Extracting strings for language: default
+2018-05-22 07:36:30:410 - info: [debug] Apk doesn't exist locally
+2018-05-22 07:36:30:411 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2018-05-22 07:36:30:411 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "rm -rf /data/local/tmp/strings.json"
+2018-05-22 07:36:30:508 - info: [debug] Not uninstalling app since server not started with --full-reset
+2018-05-22 07:36:30:508 - info: [debug] Skipping install since we launched with a package instead of an app path
+2018-05-22 07:36:30:509 - info: [debug] Forwarding system:4900 to device:4724
+2018-05-22 07:36:30:509 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 forward tcp:4900 tcp:4724
+2018-05-22 07:36:30:591 - info: [debug] Pushing appium bootstrap to device...
+2018-05-22 07:36:30:617 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 push "F:\\Appium\\AppiumForWindows\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2018-05-22 07:36:30:689 - info: [debug] Enabling Unicode keyboard support
+2018-05-22 07:36:30:690 - info: [debug] Pushing unicode ime to device...
+2018-05-22 07:36:30:700 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\unicode_ime_apk\UnicodeIME-debug.apk"
+2018-05-22 07:36:30:924 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "settings get secure default_input_method"
+2018-05-22 07:36:31:274 - info: [debug] Unsetting IME 'io.appium.android.ime/.UnicodeIME'
+2018-05-22 07:36:31:274 - info: [debug] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+2018-05-22 07:36:31:275 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "ime enable io.appium.android.ime/.UnicodeIME"
+2018-05-22 07:36:31:645 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "ime set io.appium.android.ime/.UnicodeIME"
+2018-05-22 07:36:32:003 - info: [debug] Pushing settings apk to device...
+2018-05-22 07:36:32:004 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2018-05-22 07:36:32:226 - info: [debug] Pushing unlock helper app to device...
+2018-05-22 07:36:32:250 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2018-05-22 07:36:32:492 - info: Starting App
+2018-05-22 07:36:32:493 - info: [debug] Attempting to kill all 'uiautomator' processes
+2018-05-22 07:36:32:493 - info: [debug] Getting all processes with 'uiautomator'
+2018-05-22 07:36:32:494 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "ps 'uiautomator'"
+2018-05-22 07:36:32:587 - info: [debug] No matching processes found
+2018-05-22 07:36:32:588 - info: [debug] Running bootstrap
+2018-05-22 07:36:32:588 - info: [debug] spawning: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.heshidai.app -e disableAndroidWatchers false
+2018-05-22 07:36:32:736 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-05-22 07:36:32:736 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-05-22 07:36:32:736 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2018-05-22 07:36:32:736 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-05-22 07:36:32:737 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-05-22 07:36:32:737 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-05-22 07:36:32:737 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-05-22 07:36:32:738 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2018-05-22 07:36:32:742 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2018-05-22 07:36:32:745 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2018-05-22 07:36:32:746 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2018-05-22 07:36:32:746 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2018-05-22 07:36:32:772 - info: [debug] Waking up device if it's not alive
+2018-05-22 07:36:32:773 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2018-05-22 07:36:32:776 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2018-05-22 07:36:32:779 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2018-05-22 07:36:32:780 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:32:780 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2018-05-22 07:36:32:784 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "dumpsys window"
+2018-05-22 07:36:32:796 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-05-22 07:36:32:851 - info: [debug] Screen already unlocked, continuing.
+2018-05-22 07:36:32:852 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2018-05-22 07:36:32:855 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2018-05-22 07:36:32:856 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:32:856 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2018-05-22 07:36:32:856 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data"}
+2018-05-22 07:36:32:856 - info: [debug] dataDir set to: /data
+2018-05-22 07:36:32:856 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2018-05-22 07:36:32:859 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2018-05-22 07:36:32:859 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:32:860 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2018-05-22 07:36:32:861 - info: [debug] Getting device API level
+2018-05-22 07:36:32:861 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "getprop ro.build.version.sdk"
+2018-05-22 07:36:32:872 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+2018-05-22 07:36:32:922 - info: [debug] Device is at API Level 22
+2018-05-22 07:36:32:923 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.heshidai.app/com.heshidai.app.activity.finance.WelcomeActivity"
+2018-05-22 07:36:33:712 - info: [debug] Waiting for pkg "com.heshidai.app" and activity "com.heshidai.app.activity.finance.WelcomeActivity" to be focused
+2018-05-22 07:36:33:713 - info: [debug] Getting focused package and activity
+2018-05-22 07:36:33:716 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "dumpsys window windows"
+2018-05-22 07:36:33:857 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "getprop ro.build.version.release"
+2018-05-22 07:36:33:996 - info: [debug] Device is at release version 5.1.1
+2018-05-22 07:36:33:997 - info: [debug] Device launched! Ready for commands
+2018-05-22 07:36:33:998 - info: [debug] Setting command timeout to the default of 60 secs
+2018-05-22 07:36:33:999 - info: [debug] Appium session started with sessionId 062b911c-ba30-4257-9fcc-20b4571b3304
+2018-05-22 07:36:34:038 - info: <-- POST /wd/hub/session 303 4552.421 ms - 74 
+2018-05-22 07:36:34:048 - info: --> GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304 {}
+2018-05-22 07:36:34:050 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"5.1.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"127.0.0.1:21533","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"platformVersion":"5.1.1","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"deviceName":"127.0.0.1:21533","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:34:055 - info: <-- GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304 200 6.708 ms - 835 {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"5.1.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"127.0.0.1:21533","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"platformVersion":"5.1.1","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"deviceName":"127.0.0.1:21533","unicodeKeyboard":true,"App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":true,"appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:56:075 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"id","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"com.heshidai.app:id/guide_netiv_item"}
+2018-05-22 07:36:56:076 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:36:56:076 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.heshidai.app:id/guide_netiv_item","context":"","multiple":false}]
+2018-05-22 07:36:56:080 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.heshidai.app:id/guide_netiv_item","context":"","multiple":false}}
+2018-05-22 07:36:56:080 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:56:080 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:36:56:084 - info: [debug] [BOOTSTRAP] [debug] Finding com.heshidai.app:id/guide_netiv_item using ID with the contextId:  multiple: false
+2018-05-22 07:36:56:087 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.heshidai.app:id/guide_netiv_item]
+2018-05-22 07:36:56:095 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-05-22 07:36:56:096 - info: [debug] [BOOTSTRAP] [debug] Finding com.heshidai.app:id/guide_netiv_item using ID with the contextId:  multiple: false
+2018-05-22 07:36:56:096 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.heshidai.app:id/guide_netiv_item]
+2018-05-22 07:36:56:107 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2018-05-22 07:36:56:108 - info: [debug] Condition unmet after 32ms. Timing out.
+2018-05-22 07:36:56:110 - info: [debug] Responding to client with error: {"status":7,"value":{"message":"An element could not be located on the page using the given search parameters.","origValue":"No element found"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:56:113 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 500 38.106 ms - 195 
+2018-05-22 07:36:58:118 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"name","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"账户"}
+2018-05-22 07:36:58:119 - warn: [DEPRECATED] The name locator strategy has been deprecated and will be removed.  Please use the accessibility id locator strategy instead.
+2018-05-22 07:36:58:119 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:36:58:120 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"账户","context":"","multiple":false}]
+2018-05-22 07:36:58:127 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"账户","context":"","multiple":false}}
+2018-05-22 07:36:58:127 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:58:127 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:36:58:127 - info: [debug] [BOOTSTRAP] [debug] Finding 账户 using NAME with the contextId:  multiple: false
+2018-05-22 07:36:58:127 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=账户, INSTANCE=0]
+2018-05-22 07:36:58:152 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=账户, INSTANCE=0]
+2018-05-22 07:36:58:163 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2018-05-22 07:36:58:165 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:58:166 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 200 47.225 ms - 87 {"status":0,"value":{"ELEMENT":"1"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:58:172 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"name","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"账户"}
+2018-05-22 07:36:58:173 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:36:58:173 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"账户","context":"","multiple":false}]
+2018-05-22 07:36:58:176 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"账户","context":"","multiple":false}}
+2018-05-22 07:36:58:179 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:58:179 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:36:58:179 - info: [debug] [BOOTSTRAP] [debug] Finding 账户 using NAME with the contextId:  multiple: false
+2018-05-22 07:36:58:180 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=账户, INSTANCE=0]
+2018-05-22 07:36:58:191 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=账户, INSTANCE=0]
+2018-05-22 07:36:58:196 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+2018-05-22 07:36:58:197 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"2"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:58:198 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 200 25.500 ms - 87 {"status":0,"value":{"ELEMENT":"2"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:58:200 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element/2/click {"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","id":"2"}
+2018-05-22 07:36:58:201 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"2"}]
+2018-05-22 07:36:58:203 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+2018-05-22 07:36:58:207 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:58:208 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-05-22 07:36:58:341 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:58:345 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element/2/click 200 145.050 ms - 76 {"status":0,"value":true,"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:58:346 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-05-22 07:36:58:352 - info: --> GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/screenshot {}
+2018-05-22 07:36:58:354 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+2018-05-22 07:36:58:710 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 pull /data/local/tmp/screenshot.png "C:\\Users\\wanggang\\AppData\\Local\\Temp\\appium118422-12636-19baqwv.7vu3ow29.png"
+2018-05-22 07:36:58:855 - info: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3XeYXGX9///nfc60nW2pm14ggSSAgdAhwYQWiqAgRZAiXVAU0Z9fRLErqIgiH7GgINJEKaEFCBBIqKEZQkgD0usmu5vtU8+5f3/MltnNJjub7Gayn8/rcRneec+cOecme5Hrmpfvcx+z/xk3WfJg5JFnY63FGKOqqroT9dFv7NOl/+YWLVrUQ/81S3v7779/y+9jsRhr1qxh8+bNxONxTjzxxDyuTERERERE5H8vz/NIpVIkEgmGDBmS7+XsUQL5unC+wxNV1d5ed8Zhhx3Wzf8lS3vvvvtum768vJxAIMCoUaNIp708rUpEREREROR/P2ttyy9py8nXhbNDjPahhnr16jvvZc/l+37L72tra4lGo3iej7X+Dj4lIiIiIiIi3SH7O5lk5C0AzA4xsieb1KtXn1svey7P63jST8GtiIiIiIhIz7A2M/nn+76+M3cg7xOAqqqqO1dlz+U4efurVURERERE5P+05hBQ2sr7BKCqqurOVdlzua6b7yWIiIiIiIj8n6UAcFt5nwCEPWdPNfXqe1MvIiIiIiIiIq2s1UNAtifvE4Cw5+yppl59b+qld9DPSkREREREZPdRANixvE8Aqqqq7lwVEREREREREclF3icAVVVVd66KiIiIiIiIyLb0nXlbeZ8AhD1nTzX16ntTLyIiIiIiIiLbUgC4rU4DwF9844t8+PjPuPcXl3PqZyd224WzQ4zsySb16tXn1ouIiIiIiIjItjQ0s61ALgc5xnDo/qM5dP/RXHPuNJ585QP+9ezbNMQSO33h7FBDVVW161VEREREREREJBc53wL83qJV1NTH2GvYQL514Yk8/5dv84OrTmPU0P47deF8hyeqqr29ioiIiIiIiIjkIucAcNabH3Ha12/nr4/MYVNFDX1Lopx/yhHMuP1a7vjelzly...","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:58:871 - info: <-- GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/screenshot 200 518.848 ms - 100270 {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3XeYXGX9///nfc60nW2pm14ggSSAgdAhwYQWiqAgRZAiXVAU0Z9fRLErqIgiH7GgINJEKaEFCBBIqKEZQkgD0usmu5vtU8+5f3/MltnNJjub7Gayn8/rcRneec+cOecme5Hrmpfvcx+z/xk3WfJg5JFnY63FGKOqqroT9dFv7NOl/+YWLVrUQ/81S3v7779/y+9jsRhr1qxh8+bNxONxTjzxxDyuTERERERE5H8vz/NIpVIkEgmGDBmS7+XsUQL5unC+wxNV1d5ed8Zhhx3Wzf8lS3vvvvtum768vJxAIMCoUaNIp708rUpEREREROR/P2ttyy9py8nXhbNDjPahhnr16jvvZc/l+37L72tra4lGo3iej7X+Dj4lIiIiIiIi3SH7O5lk5C0AzA4xsieb1KtXn1svey7P63jST8GtiIiIiIhIz7A2M/nn+76+M3cg7xOAqqqqO1dlz+U4efurVURERERE5P+05hBQ2sr7BKCqqurOVdlzua6b7yWIiIiIiIj8n6UAcFt5nwCEPWdPNfXqe1MvIiIiIiIiIq2s1UNAtifvE4Cw5+yppl59b+qld9DPSkREREREZPdRANixvE8Aqqqq7lwVEREREREREclF3icAVVVVd66KiIiIiIiIyLb0nXlbeZ8AhD1nTzX16ntTLyIiIiIiIiLbUgC4rU4DwF9844t8+PjPuPcXl3PqZyd224WzQ4zsySb16tXn1ouIiIiIiIjItjQ0s61ALgc5xnDo/qM5dP/RXHPuNJ585QP+9ezbNMQSO33h7FBDVVW161VEREREREREJBc53wL83qJV1NTH2GvYQL514Yk8/5dv84OrTmPU0P47deF8hyeqqr29ioiIiIiIiIjkIucAcNabH3Ha12/nr4/MYVNFDX1Lopx/yhHMuP1a7vjelzly...","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:59:881 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"id","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"com.heshidai.app:id/et_login_tel"}
+2018-05-22 07:36:59:882 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:36:59:883 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.heshidai.app:id/et_login_tel","context":"","multiple":false}]
+2018-05-22 07:36:59:887 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.heshidai.app:id/et_login_tel","context":"","multiple":false}}
+2018-05-22 07:36:59:887 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:59:887 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:36:59:887 - info: [debug] [BOOTSTRAP] [debug] Finding com.heshidai.app:id/et_login_tel using ID with the contextId:  multiple: false
+2018-05-22 07:36:59:887 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.heshidai.app:id/et_login_tel]
+2018-05-22 07:36:59:918 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+2018-05-22 07:36:59:919 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"3"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:59:921 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 200 40.024 ms - 87 {"status":0,"value":{"ELEMENT":"3"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:59:925 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"id","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"com.heshidai.app:id/title_right_tv"}
+2018-05-22 07:36:59:926 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:36:59:928 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.heshidai.app:id/title_right_tv","context":"","multiple":false}]
+2018-05-22 07:36:59:938 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.heshidai.app:id/title_right_tv","context":"","multiple":false}}
+2018-05-22 07:36:59:938 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:36:59:939 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:36:59:939 - info: [debug] [BOOTSTRAP] [debug] Finding com.heshidai.app:id/title_right_tv using ID with the contextId:  multiple: false
+2018-05-22 07:36:59:939 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.heshidai.app:id/title_right_tv]
+2018-05-22 07:36:59:985 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+2018-05-22 07:36:59:986 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"4"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:36:59:987 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 200 62.634 ms - 87 {"status":0,"value":{"ELEMENT":"4"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:00:721 - info: --> GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/screenshot {}
+2018-05-22 07:37:00:723 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+2018-05-22 07:37:00:923 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 pull /data/local/tmp/screenshot.png "C:\\Users\\wanggang\\AppData\\Local\\Temp\\appium118422-12636-1rhznwg.2mo5kzw7b9.png"
+2018-05-22 07:37:01:032 - info: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xd0XPWB9vHnTteMeq+2bMu2bIxtjCmmmNAxC4QeEkIKm0DKJiSb7G7qWzakkGySTTbJbrIbvyywLJCEYmpoDizV2BgbY7nLstWs3mY0/b5/DJaR1Ua2RjMafz/n+Fi6v3uvHnF8fPCjXzFOuvo7ppKg6vTrkvFlk+ZPdyxIdgQAAAAAAACcgCzJDgAAAAAAAAAgcSgAAQAAAAAAgDRGAQgAAAAAAACkMQpAAAAAAAAAII1RAAIAAAAAAABpjAIQAAAAAAAASGMUgAAAAAAAAEAaowAEAAAAAAAA0hgFIAAAAAAAAJDGbMkOgOnhdruTHQGYcj6fL9kRpsx1v9iV7AhT7k93LJjU/fw3AAAAAIDEmLAAvPNL1+qq85fr7e0NeujZt/TUy1unIxcApIx/fKRRUVPKcFiU6bIq121VYZZdNSVOzSt2JTseAAAAAADjimsGoMUwtPKkaq08qVqfv/FDemz9O/rvp96UdzCQ6HwAkHBPbemRaUqV+Q7NKXIqO8M6bHzvoYAC4aiiphSJmsPGKvMd+puLSzW/lCJwqjz9zeXJjnDc1vzwnWRHAAAAAIAhcS8B3vjefs2fXaI5FUX6yscv1ievOlvPvPqu7nvidTU0dyYyIwAk1P/s6NOuVr8kyZCU47aqINOugiybirPtCkVNra7N1hcuKlFHf1jt/SH1eMNq6Ajq8c3deuCNTn336orkfhMAAAAAAIwh7gLwz69t01d//N/6+BWr9OHzT1FpYY4+uuYMXXfRqXrl7d26/6k39cbWvYnMCgAJM6fIqetPL9DBzoCae0I61BvU7la/3to7oA/O+Xt8c7de392v3/31XK2aL23YN6DO/lDScgMAAAAAMJFJHQLS3efTv9z/gv71ob/opstO1/WXrFRNVbEuOGORzj9jkd7d1ag/...","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:01:034 - info: <-- GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/screenshot 200 334.154 ms - 66454 {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xd0XPWB9vHnTteMeq+2bMu2bIxtjCmmmNAxC4QeEkIKm0DKJiSb7G7qWzakkGySTTbJbrIbvyywLJCEYmpoDizV2BgbY7nLstWs3mY0/b5/DJaR1Ua2RjMafz/n+Fi6v3uvHnF8fPCjXzFOuvo7ppKg6vTrkvFlk+ZPdyxIdgQAAAAAAACcgCzJDgAAAAAAAAAgcSgAAQAAAAAAgDRGAQgAAAAAAACkMQpAAAAAAAAAII1RAAIAAAAAAABpjAIQAAAAAAAASGMUgAAAAAAAAEAaowAEAAAAAAAA0hgFIAAAAAAAAJDGbMkOgOnhdruTHQGYcj6fL9kRpsx1v9iV7AhT7k93LJjU/fw3AAAAAIDEmLAAvPNL1+qq85fr7e0NeujZt/TUy1unIxcApIx/fKRRUVPKcFiU6bIq121VYZZdNSVOzSt2JTseAAAAAADjimsGoMUwtPKkaq08qVqfv/FDemz9O/rvp96UdzCQ6HwAkHBPbemRaUqV+Q7NKXIqO8M6bHzvoYAC4aiiphSJmsPGKvMd+puLSzW/lCJwqjz9zeXJjnDc1vzwnWRHAAAAAIAhcS8B3vjefs2fXaI5FUX6yscv1ievOlvPvPqu7nvidTU0dyYyIwAk1P/s6NOuVr8kyZCU47aqINOugiybirPtCkVNra7N1hcuKlFHf1jt/SH1eMNq6Ajq8c3deuCNTn336orkfhMAAAAAAIwh7gLwz69t01d//N/6+BWr9OHzT1FpYY4+uuYMXXfRqXrl7d26/6k39cbWvYnMCgAJM6fIqetPL9DBzoCae0I61BvU7la/3to7oA/O+Xt8c7de392v3/31XK2aL23YN6DO/lDScgMAAAAAMJFJHQLS3efTv9z/gv71ob/opstO1/WXrFRNVbEuOGORzj9jkd7d1ag/...","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:01:043 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"id","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"com.heshidai.app:id/login_now"}
+2018-05-22 07:37:01:043 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:37:01:043 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.heshidai.app:id/login_now","context":"","multiple":false}]
+2018-05-22 07:37:01:049 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.heshidai.app:id/login_now","context":"","multiple":false}}
+2018-05-22 07:37:01:050 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:37:01:050 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:37:01:050 - info: [debug] [BOOTSTRAP] [debug] Finding com.heshidai.app:id/login_now using ID with the contextId:  multiple: false
+2018-05-22 07:37:01:051 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.heshidai.app:id/login_now]
+2018-05-22 07:37:01:062 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"5"}}
+2018-05-22 07:37:01:063 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"5"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:01:065 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 200 22.185 ms - 87 {"status":0,"value":{"ELEMENT":"5"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:01:069 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element/5/click {"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","id":"5"}
+2018-05-22 07:37:01:070 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"5"}]
+2018-05-22 07:37:01:072 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+2018-05-22 07:37:01:073 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:37:01:073 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-05-22 07:37:04:187 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-05-22 07:37:04:188 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:04:189 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element/5/click 200 3119.131 ms - 76 {"status":0,"value":true,"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:04:192 - info: --> GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/screenshot {}
+2018-05-22 07:37:04:193 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+2018-05-22 07:37:04:418 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 127.0.0.1:21533 pull /data/local/tmp/screenshot.png "C:\\Users\\wanggang\\AppData\\Local\\Temp\\appium118422-12636-h1oefa.k70jhy3nmi.png"
+2018-05-22 07:37:04:506 - info: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xd0XPWB9vHnTteMeq+2bMu2bIxtjCmmmNAxC4QeEkIKm0DKJiSb7G7qWzakkGySTTbJbrIbvyywLJCEYmpoDizV2BgbY7nLstWs3mY0/b5/DJaR1Ua2RjMafz/n+Fi6v3uvHnF8fPCjXzFOuvo7ppKg6vTrkvFlk+ZPdyxIdgQAAAAAAACcgCzJDgAAAAAAAAAgcSgAAQAAAAAAgDRGAQgAAAAAAACkMQpAAAAAAAAAII1RAAIAAAAAAABpjAIQAAAAAAAASGMUgAAAAAAAAEAaowAEAAAAAAAA0hgFIAAAAAAAAJDGbMkOgOnhdruTHQGYcj6fL9kRpsx1v9iV7AhT7k93LJjU/fw3AAAAAIDEmLAAvPNL1+qq85fr7e0NeujZt/TUy1unIxcApIx/fKRRUVPKcFiU6bIq121VYZZdNSVOzSt2JTseAAAAAADjimsGoMUwtPKkaq08qVqfv/FDemz9O/rvp96UdzCQ6HwAkHBPbemRaUqV+Q7NKXIqO8M6bHzvoYAC4aiiphSJmsPGKvMd+puLSzW/lCJwqjz9zeXJjnDc1vzwnWRHAAAAAIAhcS8B3vjefs2fXaI5FUX6yscv1ievOlvPvPqu7nvidTU0dyYyIwAk1P/s6NOuVr8kyZCU47aqINOugiybirPtCkVNra7N1hcuKlFHf1jt/SH1eMNq6Ajq8c3deuCNTn336orkfhMAAAAAAIwh7gLwz69t01d//N/6+BWr9OHzT1FpYY4+uuYMXXfRqXrl7d26/6k39cbWvYnMCgAJM6fIqetPL9DBzoCae0I61BvU7la/3to7oA/O+Xt8c7de392v3/31XK2aL23YN6DO/lDScgMAAAAAMJFJHQLS3efTv9z/gv71ob/opstO1/WXrFRNVbEuOGORzj9jkd7d1ag/...","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:04:508 - info: <-- GET /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/screenshot 200 316.103 ms - 65614 {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xd0XPWB9vHnTteMeq+2bMu2bIxtjCmmmNAxC4QeEkIKm0DKJiSb7G7qWzakkGySTTbJbrIbvyywLJCEYmpoDizV2BgbY7nLstWs3mY0/b5/DJaR1Ua2RjMafz/n+Fi6v3uvHnF8fPCjXzFOuvo7ppKg6vTrkvFlk+ZPdyxIdgQAAAAAAACcgCzJDgAAAAAAAAAgcSgAAQAAAAAAgDRGAQgAAAAAAACkMQpAAAAAAAAAII1RAAIAAAAAAABpjAIQAAAAAAAASGMUgAAAAAAAAEAaowAEAAAAAAAA0hgFIAAAAAAAAJDGbMkOgOnhdruTHQGYcj6fL9kRpsx1v9iV7AhT7k93LJjU/fw3AAAAAIDEmLAAvPNL1+qq85fr7e0NeujZt/TUy1unIxcApIx/fKRRUVPKcFiU6bIq121VYZZdNSVOzSt2JTseAAAAAADjimsGoMUwtPKkaq08qVqfv/FDemz9O/rvp96UdzCQ6HwAkHBPbemRaUqV+Q7NKXIqO8M6bHzvoYAC4aiiphSJmsPGKvMd+puLSzW/lCJwqjz9zeXJjnDc1vzwnWRHAAAAAIAhcS8B3vjefs2fXaI5FUX6yscv1ievOlvPvPqu7nvidTU0dyYyIwAk1P/s6NOuVr8kyZCU47aqINOugiybirPtCkVNra7N1hcuKlFHf1jt/SH1eMNq6Ajq8c3deuCNTn336orkfhMAAAAAAIwh7gLwz69t01d//N/6+BWr9OHzT1FpYY4+uuYMXXfRqXrl7d26/6k39cbWvYnMCgAJM6fIqetPL9DBzoCae0I61BvU7la/3to7oA/O+Xt8c7de392v3/31XK2aL23YN6DO/lDScgMAAAAAMJFJHQLS3efTv9z/gv71ob/opstO1/WXrFRNVbEuOGORzj9jkd7d1ag/...","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:04:515 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"id","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"com.heshidai.app:id/et_login_tel"}
+2018-05-22 07:37:04:517 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:37:04:517 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.heshidai.app:id/et_login_tel","context":"","multiple":false}]
+2018-05-22 07:37:04:520 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.heshidai.app:id/et_login_tel","context":"","multiple":false}}
+2018-05-22 07:37:04:520 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:37:04:520 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:37:04:520 - info: [debug] [BOOTSTRAP] [debug] Finding com.heshidai.app:id/et_login_tel using ID with the contextId:  multiple: false
+2018-05-22 07:37:04:521 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.heshidai.app:id/et_login_tel]
+2018-05-22 07:37:04:525 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"6"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:04:526 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 200 10.973 ms - 87 {"status":0,"value":{"ELEMENT":"6"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:04:527 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"6"}}
+2018-05-22 07:37:04:530 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element/6/value {"text":"13728628610","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","id":"6","value":["1","3","7","2","8","6","2","8","6","1","0"]}
+2018-05-22 07:37:04:532 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"6","text":"13728628610","replace":false,"unicodeKeyboard":true}]
+2018-05-22 07:37:04:536 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"6","text":"13728628610","replace":false,"unicodeKeyboard":true}}
+2018-05-22 07:37:04:536 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:37:04:536 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2018-05-22 07:37:04:536 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2018-05-22 07:37:04:539 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2018-05-22 07:37:06:836 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2018-05-22 07:37:06:839 - info: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+2018-05-22 07:37:06:840 - info: [debug] [BOOTSTRAP] [debug] Sending plain text to element: 13728628610
+2018-05-22 07:37:09:160 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-05-22 07:37:09:160 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:09:162 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element/6/value 200 4631.127 ms - 76 {"status":0,"value":true,"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:09:170 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element {"using":"id","sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","value":"com.heshidai.app:id/login_now"}
+2018-05-22 07:37:09:172 - info: [debug] Waiting up to 0ms for condition
+2018-05-22 07:37:09:172 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.heshidai.app:id/login_now","context":"","multiple":false}]
+2018-05-22 07:37:09:176 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.heshidai.app:id/login_now","context":"","multiple":false}}
+2018-05-22 07:37:09:177 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:37:09:177 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-05-22 07:37:09:177 - info: [debug] [BOOTSTRAP] [debug] Finding com.heshidai.app:id/login_now using ID with the contextId:  multiple: false
+2018-05-22 07:37:09:177 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.heshidai.app:id/login_now]
+2018-05-22 07:37:09:691 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"7"}}
+2018-05-22 07:37:09:692 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"7"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:09:693 - info: <-- POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element 200 523.407 ms - 87 {"status":0,"value":{"ELEMENT":"7"},"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304"}
+2018-05-22 07:37:09:699 - info: --> POST /wd/hub/session/062b911c-ba30-4257-9fcc-20b4571b3304/element/7/click {"sessionId":"062b911c-ba30-4257-9fcc-20b4571b3304","id":"7"}
+2018-05-22 07:37:09:700 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"7"}]
+2018-05-22 07:37:09:718 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"7"}}
+2018-05-22 07:37:09:718 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-05-22 07:37:09:718 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-05-22 07:37:12:687 - info: [debug] UiAutomator exited

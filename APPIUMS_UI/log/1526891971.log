@@ -1,0 +1,79 @@
+2018-05-21 08:39:42:696 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2018-05-21 08:39:42:697 - info: Appium REST http interface listener started on 0.0.0.0:4702
+2018-05-21 08:39:42:701 - info: [debug] Non-default server args: {"udid":"0123456789ABCDEF","port":4702,"bootstrapPort":4917,"sessionOverride":true,"noReset":true,"log":"F:/APPIUMS_UI/log/1526891971.log"}
+2018-05-21 08:39:42:701 - info: Console LogLevel: debug
+2018-05-21 08:39:42:702 - info: File LogLevel: debug
+2018-05-21 08:40:05:486 - info: --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"0123456789ABCDEF","unicodeKeyboard":"True","App":"F:/heshidaiapppakage/heshidai.apk","resetKeyboard":"True","platformVersion":"4.4.2","appPackage":"com.heshidai.app","platformName":"android","appActivity":"com.heshidai.app.activity.finance.WelcomeActivity"}}
+2018-05-21 08:40:05:489 - info: Client User-Agent string: Python http auth
+2018-05-21 08:40:05:491 - warn: Converting cap unicodeKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-21 08:40:05:492 - warn: Converting cap resetKeyboard from string to boolean. This might cause unexpected behavior.
+2018-05-21 08:40:05:499 - info: [debug] The following desired capabilities were provided, but not recognized by appium. They will be passed on to any other services running on this server. : App
+2018-05-21 08:40:05:505 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2018-05-21 08:40:05:507 - info: [debug] Creating new appium session 6a4657c1-4c3b-42bf-a05c-859360d867ce
+2018-05-21 08:40:05:508 - info: Starting android appium
+2018-05-21 08:40:05:511 - info: [debug] Getting Java version
+2018-05-21 08:40:05:680 - info: Java version is: 1.7.0_45
+2018-05-21 08:40:05:681 - info: [debug] Checking whether adb is present
+2018-05-21 08:40:05:684 - info: [debug] Using adb from F:\Appium\Android-sdk\sdk\platform-tools\adb.exe
+2018-05-21 08:40:05:684 - warn: No app capability, can't parse package/activity
+2018-05-21 08:40:05:685 - info: [debug] Using fast reset? false
+2018-05-21 08:40:05:685 - info: [debug] Preparing device for session
+2018-05-21 08:40:05:686 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2018-05-21 08:40:05:686 - info: Retrieving device
+2018-05-21 08:40:05:687 - info: [debug] Trying to find a connected android device
+2018-05-21 08:40:05:688 - info: [debug] Getting connected devices...
+2018-05-21 08:40:05:690 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe devices
+2018-05-21 08:40:05:780 - info: [debug] 2 device(s) connected
+2018-05-21 08:40:05:782 - info: Found device 0123456789ABCDEF
+2018-05-21 08:40:05:782 - info: [debug] Setting device id to 0123456789ABCDEF
+2018-05-21 08:40:05:783 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2018-05-21 08:40:05:784 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF wait-for-device
+2018-05-21 08:40:05:878 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "echo 'ready'"
+2018-05-21 08:40:06:009 - info: [debug] Starting logcat capture
+2018-05-21 08:40:06:111 - info: [debug] Getting device API level
+2018-05-21 08:40:06:114 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "getprop ro.build.version.sdk"
+2018-05-21 08:40:06:377 - info: [debug] Device is at API Level 19
+2018-05-21 08:40:06:378 - info: Device API level is: 19
+2018-05-21 08:40:06:378 - info: [debug] Extracting strings for language: default
+2018-05-21 08:40:06:379 - info: [debug] Apk doesn't exist locally
+2018-05-21 08:40:06:379 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2018-05-21 08:40:06:379 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "rm -rf /data/local/tmp/strings.json"
+2018-05-21 08:40:06:636 - info: [debug] Not uninstalling app since server not started with --full-reset
+2018-05-21 08:40:06:636 - info: [debug] Skipping install since we launched with a package instead of an app path
+2018-05-21 08:40:06:636 - info: [debug] Forwarding system:4917 to device:4724
+2018-05-21 08:40:06:636 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF forward tcp:4917 tcp:4724
+2018-05-21 08:40:07:017 - info: [debug] Pushing appium bootstrap to device...
+2018-05-21 08:40:07:020 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF push "F:\\Appium\\AppiumForWindows\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2018-05-21 08:40:07:252 - info: [debug] Enabling Unicode keyboard support
+2018-05-21 08:40:07:252 - info: [debug] Pushing unicode ime to device...
+2018-05-21 08:40:07:253 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\unicode_ime_apk\UnicodeIME-debug.apk"
+2018-05-21 08:40:09:973 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "settings get secure default_input_method"
+2018-05-21 08:40:11:006 - info: [debug] Unsetting IME 'com.sohu.inputmethod.sogou.xiaomi/.SogouIME'
+2018-05-21 08:40:11:007 - info: [debug] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+2018-05-21 08:40:11:008 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "ime enable io.appium.android.ime/.UnicodeIME"
+2018-05-21 08:40:11:943 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "ime set io.appium.android.ime/.UnicodeIME"
+2018-05-21 08:40:12:926 - info: [debug] Pushing settings apk to device...
+2018-05-21 08:40:12:927 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2018-05-21 08:40:34:098 - info: [debug] Resetting IME to 'com.sohu.inputmethod.sogou.xiaomi/.SogouIME'
+2018-05-21 08:40:34:100 - info: [debug] executing cmd: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF shell "ime set com.sohu.inputmethod.sogou.xiaomi/.SogouIME"
+2018-05-21 08:40:35:210 - info: [debug] Stopping logcat capture
+2018-05-21 08:40:35:220 - info: [debug] Logcat terminated with code null, signal SIGTERM
+2018-05-21 08:40:35:223 - info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+2018-05-21 08:40:42:223 - warn: UiAutomator did not shut down fast enough, calling it gone
+2018-05-21 08:40:42:223 - info: [debug] Cleaning up android objects
+2018-05-21 08:40:42:223 - info: [debug] Cleaning up appium session
+2018-05-21 08:40:42:224 - error: Failed to start an Appium session, err was: Error: Command failed: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+** daemon still not running
+error: cannot connect to daemon
+
+2018-05-21 08:40:42:228 - info: [debug] Error: Command failed: F:\Appium\Android-sdk\sdk\platform-tools\adb.exe -s 0123456789ABCDEF install "F:\Appium\AppiumForWindows\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+** daemon still not running
+error: cannot connect to daemon
+
+    at ChildProcess.exithandler (child_process.js:206:12)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+2018-05-21 08:40:42:228 - info: [debug] Responding to client with error: {"status":33,"value":{"message":"A new session could not be created. (Original error: Command failed: F:\\Appium\\Android-sdk\\sdk\\platform-tools\\adb.exe -s 0123456789ABCDEF install \"F:\\Appium\\AppiumForWindows\\Appium\\node_modules\\appium\\build\\settings_apk\\settings_apk-debug.apk\"\n** daemon still not running\r\nerror: cannot connect to daemon\r\n)","killed":false,"code":1,"signal":null,"cmd":"F:\\Appium\\Android-sdk\\sdk\\platform-tools\\adb.exe -s 0123456789ABCDEF install \"F:\\Appium\\AppiumForWindows\\Appium\\node_modules\\appium\\build\\settings_apk\\settings_apk-debug.apk\"","origValue":"Command failed: F:\\Appium\\Android-sdk\\sdk\\platform-tools\\adb.exe -s 0123456789ABCDEF install \"F:\\Appium\\AppiumForWindows\\Appium\\node_modules\\appium\\build\\settings_apk\\settings_apk-debug.apk\"\n** daemon still not running\r\nerror: cannot connect to daemon\r\n"},"sessionId":null}
+2018-05-21 08:40:42:234 - info: <-- POST /wd/hub/session 500 36747.988 ms - 904 

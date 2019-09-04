@@ -1,0 +1,10 @@
+2018-05-21 11:01:50:085 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2018-05-21 11:01:50:087 - info: Appium REST http interface listener started on 0.0.0.0:4704
+2018-05-21 11:01:50:095 - info: [debug] Non-default server args: {"udid":"0123456789ABCDEF","port":4704,"bootstrapPort":4992,"sessionOverride":true,"noReset":true,"log":"F:/APPIUMS_UI/log/1526900500.log"}
+2018-05-21 11:01:50:096 - info: Console LogLevel: debug
+2018-05-21 11:01:50:096 - info: File LogLevel: debug
+2018-05-21 11:01:50:233 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2018-05-21 11:01:50:235 - info: Appium REST http interface listener started on 0.0.0.0:4703
+2018-05-21 11:01:50:240 - info: [debug] Non-default server args: {"udid":"127.0.0.1:21533","port":4703,"bootstrapPort":4972,"sessionOverride":true,"noReset":true,"log":"F:/APPIUMS_UI/log/1526900500.log"}
+2018-05-21 11:01:50:241 - info: Console LogLevel: debug
+2018-05-21 11:01:50:241 - info: File LogLevel: debug
